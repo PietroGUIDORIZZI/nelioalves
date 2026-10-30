@@ -11,14 +11,13 @@ public class Conta {
     public Conta(String name, int number){
         this.name = name;
         this.number = number;
-        this.balance = 0;
 
     }
     public Conta(String name, double balance,
             int number){
         this.name = name;
-        this.balance = balance;
         this.number = number;
+        deposit(balance);
     }
 
     public void deposit(double value){
