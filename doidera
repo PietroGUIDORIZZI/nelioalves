@@ -1,0 +1,56 @@
+[1mdiff --git a/src/main/java/a08OrientacaoAObjetos/exer1/Main.java b/src/main/java/a08OrientacaoAObjetos/exer1/Main.java[m
+[1mindex c8084c8..51dbbf1 100644[m
+[1m--- a/src/main/java/a08OrientacaoAObjetos/exer1/Main.java[m
+[1m+++ b/src/main/java/a08OrientacaoAObjetos/exer1/Main.java[m
+[36m@@ -1,4 +1,17 @@[m
+ package a08OrientacaoAObjetos.exer1;[m
+ [m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+ public class Main {[m
+[32m+[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m[32m        Scanner sc = new Scanner(System.in);[m
+[32m+[m[32m        System.out.println("Enter rectangle witdth and height:");[m
+[32m+[m[32m        double w = Double.valueOf(sc.nextLine());[m
+[32m+[m[32m        double h = Double.valueOf(sc.nextLine());[m
+[32m+[m[32m        Rectangle rect = new Rectangle(w, h);[m
+[32m+[m[32m        System.out.printf("Area = %.2f\n", rect.area() );[m
+[32m+[m[32m        System.out.printf("Perimeter = %.2f\n", rect.perimeter() );[m
+[32m+[m[32m        System.out.printf("Diagonal = %.2f\n", rect.diagonal() );[m
+[32m+[m[32m    }[m
+ }[m
+[1mdiff --git a/src/main/java/a08OrientacaoAObjetos/exer1/Rectangle.java b/src/main/java/a08OrientacaoAObjetos/exer1/Rectangle.java[m
+[1mindex 0ebd032..33b88c1 100644[m
+[1m--- a/src/main/java/a08OrientacaoAObjetos/exer1/Rectangle.java[m
+[1m+++ b/src/main/java/a08OrientacaoAObjetos/exer1/Rectangle.java[m
+[36m@@ -1,4 +1,29 @@[m
+ package a08OrientacaoAObjetos.exer1;[m
+ [m
+ public class Rectangle {[m
+[32m+[m[32m    private double width;[m
+[32m+[m[32m    private double height;[m
+[32m+[m
+[32m+[m[32m    public Rectangle(double width, double height){[m
+[32m+[m[32m        this.width = width;[m
+[32m+[m[32m        this.height = height;[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public double area(){[m
+[32m+[m[32m        return this.height * this.width;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public double perimeter(){[m
+[32m+[m[32m        return this.width * 2 + this.height * 2;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public double diagonal(){[m
+[32m+[m[32m        double bSq = Math.pow(this.height, 2);[m
+[32m+[m[32m        double cSq = Math.pow(this.width, 2);[m
+[32m+[m[32m        double a = bSq + cSq;[m
+[32m+[m[32m        return Math.sqrt(a);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    }[m
+ }[m
