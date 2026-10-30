@@ -17,5 +17,6 @@ public class Main {
         if(!aluno.passed()){
             System.out.printf("MISSING %.2f POINTS", aluno.missingPoints());
         }
+        sc.close();
     }
 }
