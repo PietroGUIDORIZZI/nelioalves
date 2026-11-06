@@ -8,8 +8,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Account ac = new Account(8415,
                 "Pietro Guidorizzi",
-                50.0, 41.0);
-        ac.withdraw(52);
-        System.out.println(ac);
-            }
+                50.0,
+                56.0);
+        try {
+            ac.withdraw(52);
+            System.out.println(ac);
+        } catch (StupidLogicException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 }
