@@ -7,9 +7,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o salário para ver o imposto: ");
         double salary = sc.nextDouble();
-        double tax1 = 0;
-        double tax2 = 0;
-        double tax3 = 0;
 
         if(salary <= 2000){
             System.out.println("Isento");
@@ -18,7 +15,6 @@ public class Main {
         } else if (salary <= 4500) {
             System.out.printf("R$ %.2f%n",
                               (salary - 3000.0) * 0.18 + 1000.0 * 0.08);
-
         } else {
             System.out.printf("R$ %.2f%n",
                               (salary - 4500) * 0.28 + 1500.0 * 0.18 + 1000 * 0.08 );
