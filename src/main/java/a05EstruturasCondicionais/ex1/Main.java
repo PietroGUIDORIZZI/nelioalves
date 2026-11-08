@@ -9,5 +9,6 @@ public class Main {
         int n = sc.nextInt();
         String negativo = (n < 0) ? "NEGATIVO" : "NAO NEGATIVO";
         System.out.println(negativo);
+        sc.close();
     }
 }

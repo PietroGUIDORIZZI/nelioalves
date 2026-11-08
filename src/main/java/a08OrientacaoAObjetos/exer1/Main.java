@@ -13,5 +13,6 @@ public class Main {
         System.out.printf("Area = %.2f\n", rect.area() );
         System.out.printf("Perimeter = %.2f\n", rect.perimeter() );
         System.out.printf("Diagonal = %.2f\n", rect.diagonal() );
+        sc.close();
     }
 }

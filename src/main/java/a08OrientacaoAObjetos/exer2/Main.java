@@ -21,5 +21,6 @@ public class Main {
         e.increaseSalary(percentage);
         System.out.println();
         System.out.printf("Updated data: %s, $ %.2f\n", e.getName(), e.netSalary());
+        sc.close();
     }
 }

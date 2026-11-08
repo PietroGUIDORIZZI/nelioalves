@@ -13,7 +13,7 @@ public class Main {
         double valorPorHora = sc.nextDouble();
         System.out.println("NUMBER = " + numeroDoFuncionario);
         System.out.println("SALARY =  U$" + (horas * valorPorHora));
-        
+        sc.close();
 
     }
 }

@@ -24,6 +24,6 @@ public class Main {
         double price2 = pc2Price * pc2Qtd;
 
         System.out.printf("Valor a pagar: R$%.2f", (price1 + price2));
-        
+        sc.close();
     }
 }

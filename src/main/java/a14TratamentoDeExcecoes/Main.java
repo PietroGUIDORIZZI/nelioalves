@@ -16,5 +16,6 @@ public class Main {
         } catch (StupidLogicException e) {
             System.out.println("Error: " + e.getMessage());
         }
+        sc.close();
     }
 }

@@ -13,6 +13,6 @@ public class Main {
         String multiplos = (a % b == 0 || b % a == 0) ? "Sao Multiplos" :
                            "Nao sao Multiplos";
         System.out.println(multiplos);
-
+        sc.close();
     }
 }

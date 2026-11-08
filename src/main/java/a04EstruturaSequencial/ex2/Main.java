@@ -10,6 +10,6 @@ public class Main {
         double raio = sc.nextDouble();
         double area = Math.pow(raio, 2) * Math.PI;
         System.out.printf("A=%.4f", area);
-        
+        sc.close();
     }
 }

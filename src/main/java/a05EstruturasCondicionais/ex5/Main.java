@@ -30,5 +30,6 @@ public class Main {
                 price = 0;
         }
         System.out.printf("Total: R$ %.2f", price);
+        sc.close();
     }
 }

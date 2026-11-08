@@ -9,6 +9,7 @@ public class Main {
         int x = sc.nextInt();
         int y = sc.nextInt();
         System.out.println("Soma = " + (x + y));
+        sc.close();
     }
 
 }

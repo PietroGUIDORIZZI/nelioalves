@@ -22,6 +22,6 @@ public class Main {
         System.out.printf("TRAPEZIO: %.3f%n", trapeze);
         System.out.printf("QUADRADO: %.3f%n", square);
         System.out.printf("RETANGULO: %.3f%n", retangle);
-
+        sc.close();
     }
 }
