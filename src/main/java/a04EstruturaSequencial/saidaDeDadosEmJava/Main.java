@@ -1,4 +1,4 @@
-package a04EstruturaSequencial;
+package a04EstruturaSequencial.saidaDeDadosEmJava;
 
 import java.util.Locale;
 
