@@ -1,4 +1,4 @@
-package ex6;
+package a04EstruturaSequencial.ex6;
 
 import java.util.Scanner;
 
