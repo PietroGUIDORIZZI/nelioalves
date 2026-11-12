@@ -28,17 +28,17 @@ public class Account {
         throw new IllegalArgumentException("Deposit amount must be positive!");
     }
 
-    public void withdraw(double amount) throws StupidLogicException {
+    public void withdraw(double amount) throws UnavailableOperationException {
         boolean enough = amount <= this.balance;
         boolean enoughLimit = amount <= this.withdrawLimit;
         if (!enough && !enoughLimit) {
-            throw new StupidLogicException(
+            throw new UnavailableOperationException(
                     "Not enough balance(" + this.balance + ") and not enough limit("
                             + this.withdrawLimit + ") ");
         } else if (!enough) {
-            throw new StupidLogicException("Not enough balance");
+            throw new UnavailableOperationException("Not enough balance");
         } else if (!enoughLimit) {
-            throw new StupidLogicException("Not enough limit");
+            throw new UnavailableOperationException("Not enough limit");
         } else {
             this.balance -= amount;
         }

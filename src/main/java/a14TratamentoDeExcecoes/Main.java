@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void main(String[] args) throws StupidLogicException {
+    static void main(String[] args) throws UnavailableOperationException {
         Scanner sc = new Scanner(System.in);
         Account ac = new Account(8415,
                 "Pietro Guidorizzi",
@@ -13,7 +13,7 @@ public class Main {
         try {
             ac.withdraw(52);
             System.out.println(ac);
-        } catch (StupidLogicException e) {
+        } catch (UnavailableOperationException e) {
             System.out.println("Error: " + e.getMessage());
         }
         sc.close();
