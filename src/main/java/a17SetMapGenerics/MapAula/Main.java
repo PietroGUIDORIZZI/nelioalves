@@ -11,14 +11,17 @@ public class Main {
         cookies.put("email", "maria@gmail.com");
         cookies.put("phone", "99711122");
 
-        cookies.remove("email");
+        //cookies.remove("email");
         cookies.put("phone", "99771133");
 
         System.out.println("All Cookies:");
 
         for (String key : cookies.keySet()) {
             System.out.println(key + ": " + cookies.get(key));
-            
         }
+
+        System.out.println(cookies.containsKey("phone"));
+        System.out.println(cookies.containsValue("maria@gmail.com"));
+        
     }
 }
