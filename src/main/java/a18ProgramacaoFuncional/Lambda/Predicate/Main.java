@@ -21,8 +21,8 @@ public class Main {
         list.add(new Product("Notebook", 1200.00));
         list.add(new Product("Tablet", 450.00));
         list.add(new Product("Tabletv", 550.00));
-
-        list.removeIf(new Predicated());
+        double min = 860.00;
+        list.removeIf(product -> product.getPrice() >= min);
         list.forEach(System.out::println);
     }
 }
